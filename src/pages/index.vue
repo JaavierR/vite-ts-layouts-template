@@ -1,15 +1,3 @@
-<script setup lang="ts">
-import { useCountryStore } from '@/stores/country'
-
-const country = useCountryStore()
-const { t, availableLocales, locale } = useI18n()
-
-const toggleLocales = () => {
-    const locales = availableLocales
-    locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
-}
-</script>
-
 <template>
     <div class="p-4 text-lg">
         <div class="font-bold">
@@ -26,3 +14,14 @@ const toggleLocales = () => {
         </a>
     </div>
 </template>
+
+<script setup lang="ts">
+import { useCountryStore } from '@/stores/country'
+const country = useCountryStore()
+const { t, availableLocales, locale } = useI18n()
+
+const toggleLocales = (): void => {
+    const locales = availableLocales
+    locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
+}
+</script>

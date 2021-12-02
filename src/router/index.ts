@@ -1,17 +1,9 @@
-import {
-    createRouter,
-    createWebHistory,
-    Router,
-    RouteRecordRaw,
-} from 'vue-router'
+import { createRouter, createWebHistory, Router } from 'vue-router'
 
-const routes: Array<RouteRecordRaw> = [
-    {
-        path: '/',
-        name: 'Home',
-        component: () => import('@/views/Home.vue'),
-    },
-]
+import generatedRoutes from 'virtual:generated-pages'
+import { setupLayouts } from 'virtual:generated-layouts'
+
+const routes = setupLayouts(generatedRoutes)
 
 const router: Router = createRouter({
     history: createWebHistory(),
