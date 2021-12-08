@@ -1294,7 +1294,7 @@ debug@^4.0.1, debug@^4.1.1, debug@^4.3.2:
   dependencies:
     ms "2.1.2"
 
-debug@^4.1.0, debug@^4.3.1:
+debug@^4.1.0, debug@^4.3.1, debug@^4.3.3:
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.3.tgz#04266e0b70a98d4462e6e288e38259213332b664"
   integrity sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==
@@ -3847,13 +3847,12 @@ vite-plugin-eslint@^1.3.0:
     eslint "^7.26.0"
     rollup "^2.47.0"
 
-vite-plugin-pages@^0.19.0-beta.6:
-  version "0.19.0-beta.6"
-  resolved "https://registry.yarnpkg.com/vite-plugin-pages/-/vite-plugin-pages-0.19.0-beta.6.tgz#19a888fabc35838d8784ae2dedc3cc446181faeb"
-  integrity sha512-FH52XaVdvH8WW+2taNdI6Wh17VdNwWfDB96qnne/UuIxkzKlCQowSvDvbQGyO8X5rK2s+9Qtd2BA2ZRtIACuLA==
+vite-plugin-pages@^0.19.0-beta.8:
+  version "0.19.0-beta.8"
+  resolved "https://registry.yarnpkg.com/vite-plugin-pages/-/vite-plugin-pages-0.19.0-beta.8.tgz#177d5eae0e960c308ee5c7a31480d99f5800c558"
+  integrity sha512-jPSh0VWceFcw7/U8Nw8+bu23TessyZbCJetj/Nmn+reBrIA6GNsEEdTgqvl2AJxMksB+/oKh3FzUwj8z4nlZag==
   dependencies:
-    "@antfu/utils" "^0.3.0"
-    debug "^4.3.2"
+    debug "^4.3.3"
     deep-equal "^2.0.5"
     fast-glob "^3.2.7"
     json5 "^2.2.0"
@@ -3869,10 +3868,10 @@ vite-plugin-vue-layouts@^0.5.0:
     debug "^4.3.2"
     fast-glob "^3.2.7"
 
-vite@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.7.0.tgz#d3d753220d10afb055731cd7feaa8e87b2b779b6"
-  integrity sha512-ZM629j9n6f1Gcr2KsfpLhJ0FRkift4SsTLSvExmNpGJYzyi1JyLOFybz85ShqFP5f4oCfJSblWAma9X8lZg/vA==
+vite@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.7.1.tgz#be50ad13214290ecbebbe5ad389ed423cb5f137e"
+  integrity sha512-TDXXhcu5lyQ6uosK4ZWaOyB4VzOiizk0biitRzDzaEtgSUi8rVYPc4k1xgOjLSf0OuceDJmojFKXHOX9DB1WuQ==
   dependencies:
     esbuild "^0.13.12"
     postcss "^8.3.11"
